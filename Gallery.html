@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<head>
+  <title>Gallery</title>
+</head>
+
+<style>
+body {background-color: rgb(250, 246, 246);}
+h1   {color: rgb(27, 23, 27);}
+h2   {color: rgb(6, 41, 128);}
+h3  {color: rgb(128, 71, 6);}
+p    {color: rgb(8, 8, 8);}
+</style>
+   
+<style>
+  * {box-sizing: border-box}
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  .navbar {
+    width: 100%;
+    background-color:#02352e; 
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #7c1111;
+  }
+  
+  .navbar a.active {
+    background-color: #302d27;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  </style>
+  
+  
+  
+  <div class="navbar">
+  <strong> <a class="active" href="index.html">HOME</a> <strong>
+    <a href="aboutus.html">ABOUT US</a> 
+    <a href="Gallery.html">GALLERY</a> 
+    <a href="contactus.html">CONTACT</a>
+    </div>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>SHOREXHUB</h1>
+<hr>
+
+<h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Iphone')"> Iphone</button>
+  <button class="btn" onclick="filterSelection('Samsung')"> Samsung</button>
+  <button class="btn" onclick="filterSelection('Motorola')"> Motorola</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Iphone">
+    <div class="content">
+        <img src="images/iphone1.jpg" alt="Gallery" width="200" height="250">
+      <h4>Iphone 13 128gb</h4>
+      <p>$1,090</p>
+    </div>
+  </div>
+  <div class="column Iphone">
+    <div class="content">
+        <img src="images/iphone2.jpg" alt="Gallery" width="200" height="250">
+      <h4>Iphone 13 pro 256bg </h4>
+      <p>$1,300</p>
+    </div>
+  </div>
+  <div class="column Iphone">
+    <div class="content">
+        <img src="images/iphone3.jpg" alt="Gallery" width="200" height="250">
+      <h4>Iphone 13 pro Max 256bg</h4>
+      <p>$1,450</p>
+    </div>
+  </div>
+  
+  <div class="column iphone">
+    <div class="content">
+        <img src="images/iphone4.jpg" alt="Gallery" width="200" height="250">
+      <h4>Iphone 13 pro Max 512gb</h4>
+      <p>$1,520</p>
+    </div>
+  </div>
+  <div class="column Samsung">
+    <div class="content">
+        <img src="images/samsung.jpg" alt="Gallery" width="200" height="250">
+      <h4>Samsung Z10 Flip</h4>
+      <p>$1,870</p>
+    </div>
+  </div>
+  <div class="column Samsung">
+    <div class="content">
+        <img src="images/samsung1.jpg" alt="Gallery" width="200" height="250">
+      <h4>Samsung Z10 Fold</h4>
+      <p>$1,950</p>
+    </div>
+  </div>
+
+  <div class="column Motorola">
+    <div class="content">
+        <img src="images/moto1.webp" alt="Gallery" width="200" height="250">
+      <h4>Razr 2022 Foldable Smartphone 8GB</h4>
+      <p>$949.99</p>
+    </div>
+  </div>
+  <div class="column Motorola">
+    <div class="content">
+        <img src="images/moto2.webp" alt="Gallery" width="200" height="250">
+      <h4>Razr 2022 Foldable Smartphone 16GB</h4>
+      <p>$ 1,190</p>
+    </div>
+  </div>
+  <div class="column Motorola">
+    <div class="content">
+        <img src="images/moto3.webp" alt="Gallery" width="200" height="250">
+      <h4>Motorola Edge 30 Ultra Smartphone, Android, 12GB</h4>
+      <p>$690</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<footer>
+  <div class="copy">
+      <div class="container">
+          <a href="shoretech@gmail.com">2023 &copy; ALL RIGHTS RESERVED |DESIGNED BY SHORETECH</a>
+          <span>
+              <div class="media-icons">
+                <a href=https://google.com class="fab fa-google-plus-g"></i></a>
+                <a href=https://twitter.com class="fab fa-twitter"></i></a>
+                <a href=https://instagram.com class="fab fa-instagram"></i></a>
+                <a href=https://whatsapp.com class="fab fa-whatsapp"></i></a>
+              </div>
+          </span>
+      </div>
+</footer>
+</body>
+</html>
